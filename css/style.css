@@ -1,3 +1,28 @@
 /*
 	Custom CSS for Game's Page
 	*/
+
+.game{
+	display: inline-block;
+	width: 200px;
+	padding: 0px;
+	margin:0px;
+}
+
+.game img{
+	padding: 0 15px;
+}
+
+.game a {
+	color: #333;
+	font-size: .9em;
+}
+
+.game a:hover {
+	color: #FA4716;
+	font-size: .9em;
+}
+
+.game h4 {
+	margin-bottom: -6px;
+}
