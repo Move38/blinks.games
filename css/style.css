@@ -6,7 +6,7 @@
 	display: inline-block;
 	width: 200px;
 	padding: 0px;
-	margin:0px;
+	margin:0 0 20px 0;
 }
 
 .game img{
@@ -25,4 +25,11 @@
 
 .game h4 {
 	margin-bottom: -6px;
+}
+
+.instructions-intro {
+	padding: 10px 0 20px 0;
+	max-width: 680px;
+	margin-left: auto;
+	margin-right: auto;
 }
