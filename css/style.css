@@ -49,3 +49,27 @@
 .dev-step li {
 	padding: 10px 0;
 }
+
+.api-list {
+	list-style: none; 
+	text-align: left;
+	padding: 0;
+}
+
+.api-list li {
+	margin: 0;
+	padding: 0;
+}
+
+.variable {
+	color: #ACF;
+}
+
+.api-group {
+	display: block;
+	clear: both;
+}
+
+.no-border {
+	border: none !important;
+}
