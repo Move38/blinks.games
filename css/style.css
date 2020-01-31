@@ -33,3 +33,19 @@
 	margin-left: auto;
 	margin-right: auto;
 }
+
+.code {
+	font-family: Courier, monospace;
+	background: #efefef;
+	padding: 4px;
+	font-size: .8em;
+}
+
+.dev-step {
+	padding: 20px;
+	border: #eee 1px solid;
+}
+
+.dev-step li {
+	padding: 10px 0;
+}
