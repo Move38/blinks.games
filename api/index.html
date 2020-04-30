@@ -149,7 +149,19 @@
 	        </div>
 	    </div>
 	    
-
+	    <div class="card no-border">
+	        <div class="card-body">
+			    <h4>Datagrams</h4>
+				<ul class="api-list">
+					<li>getDatagramLengthOnFace(<span class="variable">5</span>)</li>
+					<li>isDatagramReadyOnFace(<span class="variable">5</span>)</li>
+					<li>getDatagramOnFace(<span class="variable">5</span>)</li>
+					<li>markDatagramReadOnFace(<span class="variable">5</span>)</li>
+					<li>sendDatagramOnFace(<span class="variable">*data, length, face</span>)</li>
+				</ul>
+	        </div>
+	    </div>
+	  
 	    <div class="card no-border">
 	        <div class="card-body">
 			    <h4>Time</h4>
@@ -186,9 +198,27 @@
 					<li>FOREACH_FACE(<span class="variable">f</span>){...}</li>
 					<li>COUNT_OF(<span class="variable">array</span>)</li>
 					<li>sin8_C()</li>
+					<li>random(65535)</li>
 					<li>map(<span class="variable">val, 0, 100, 0, 255</span>)
 					<li>FACE_COUNT</li>
 					<li>MAX_BRIGHTNESS</li>
+					<li>hasWoken()</li>
+					<li>startState()</li>
+				</ul>
+	        </div>
+	    </div>
+		
+	<div class="card no-border">
+	        <div class="card-body">
+			    <h4>System</h4>
+				<ul class="api-list">
+					<li>hasWoken()</li>
+					<li>startState()</li>
+					<li>•  START_STATE_POWER_UP</li>
+					<li>•  START_STATE_WE_ARE_ROOT</li>
+					<li>•  START_STATE_DOWNLOAD_SUCCESS</li>
+					<li>getSerialNumberByte(<span class="variable">0 - 8</span>)</li>
+					<li>getBlinkbiosVersion()</li>
 				</ul>
 	        </div>
 	    </div>
