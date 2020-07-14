@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	
+		<!-- Primary Meta Tags -->
+	  <meta charset="utf-8">
+	  <title>Blinks - Developer Quick Start</title>
+	<meta name="title" content="World's First Smart Tabletop Game System – Let the Games Begin">
+	<meta name="description" content="Get your hands on Blinks. The game system with physical pieces that are intelligent, these next-gen board games bring the best of digital gaming to the social experience of board games.">
+	<meta name="author" content="Move38, Inc.">
+	
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="http://blinks.games/">
+	<meta property="og:title" content="World's First Smart Tabletop Game System – Let the Games Begin">
+	<meta property="og:description" content="Get your hands on Blinks. The game system with physical pieces that are intelligent, these next-gen board games bring the best of digital gaming to the social experience of board games.">
+	<meta property="og:image" content="http://blinks.games/Blinks_GettingStarted_Thumb.png">
+	
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:url" content="http://blinks.games/">
+	<meta property="twitter:title" content="World's First Smart Tabletop Game System – Let the Games Begin">
+	<meta property="twitter:description" content="Get your hands on Blinks. The game system with physical pieces that are intelligent, these next-gen board games bring the best of digital gaming to the social experience of board games.">
+	<meta property="twitter:image" content="http://blinks.games/Blinks_GettingStarted_Thumb.png">
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-84685529-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	
+	  gtag('config', 'UA-84685529-1');
+	</script>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/style.css?v=002" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+    <div class="container">
+       <a class="navbar-brand js-scroll-trigger" href="https://www.move38.com"><img height="50px" src="../img/Logotype_white.svg"/> |       <img height="50px" src="../img/Blinks_logo_stamp.svg"/>
+</a>
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://move38.com">Buy Now</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://blinks.games/api">Blinks API</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://community.move38.com/">Community</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://support.move38.com/">Support
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.move38.com/teaser/">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div id="warning">
+    <h3>THIS IS AN ARCHIVE. PLEASE VISIT <a href="/index.html">HERE</a> FOR THE LATEST.</h3>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+	    <h1 class="mt-5"><b>Welcome Blinks Developer!</b></h1>
+<!--         <p class="lead">Let the games begin</p> -->
+        
+<!--         <iframe width="640" height="360" src="https://www.youtube.com/embed/PQyzGJMQOqY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+		
+		<p>Here’s what you’ll need to get started</p>
+        
+
+		<div class="dev-step">
+	        <h1><b>1. Join the <a href="http://forum.move38.com">Forum</a></b></h1>
+	                <a href="http://forum.move38.com"><img src="../img/dev/Move38_Logotype_wide_color.svg" width="200px" alt="Slack logo"/></a>
+	
+	        <p>Join our dedicated Discourse forum to have access to expert advice and community discussions with developers from Move38 and all over the world!</p>
+		</div>
+
+        <br>
+		
+		<div class="dev-step">
+	        <h1><b>2. Install <a href="https://www.arduino.cc/en/Main/Software">Arduino</a></b></h1>
+	        <br>
+	        <a href="https://www.arduino.cc/en/Main/Software"><img src="../img/dev/Arduino_Logo.svg" width="150px" alt="Arduino logo"/></a>
+	        <br>
+	        <br>
+	        <p>Make sure you download the Arduino IDE 1.8.12 or greater, not the online dev tools.</p>
+		</div>
+        
+        <br>
+        
+		<div class="dev-step">        
+	        <h1><b>3. Get the <a href="../Blinks-SDK-1.1.0-GM.zip">Blinks SDK</a></b></h1>
+	        <a href="../Blinks-SDK-1.1.0-GM.zip"><img src="../img/gameart/Blank.png" width="175px" alt="Blinks SDK"/></a>
+	        <p>After you have installed Arduino and launched the application, you will notice that Arduino has created a folder in your <span class="code">Documents</span> folder named <span class="code">Arduino</span>. Download the zip file above, then follow these steps to install the Blinks Library:</p>
+	        <ol>
+		        <li>Unzip the Blinks Library you downloaded into <span class="code">~/Documents/Arduino/hardware</span>. Note: If this is your first time with custom hardware, you will need to create the <span class="code">hardware</span> folder.</li>
+		        <li>Restart Arduino, then click `Tools` in your menu bar, and navigate down to <span class="code">Board:</span> you should now see <span class="code">Move38: Blinks Tile</span> at the bottom. Select it.</li>
+		        <li>Click on <span class="code">Tools</span> in your menu bar, and navigate down to <span class="code">Programmer:</span> select the programmer <span class="code">Blinks USBTinyISP</span></li>
+	        </ol>
+			<p><strong>NOTE FOR WINDOWS USERS</strong> - you will most likely need <a href="https://learn.adafruit.com/usbtinyisp/drivers">this driver</a> to use the USBtiny programmer</p>	
+		</div>
+
+        <br>
+	        <div class="dev-step">
+			<h2>Getting Started Videos</h2>
+			<div style="width:50%">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/ZwD9mZRH9nM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			<div style="width:50%; height:100%; background: #EFEFEF;">
+			</div>
+	      	</div>
+		
+	<br>
+	      
+		<div class="dev-step">        
+
+	        <h2>Dev Tutorials</h2>
+	        <p>This is the perfect place to start, as you can copy and paste code as well as learn the 4 basic building blocks of coding with Blinks.</p>
+	        <ul class="list-unstyled">
+				<li>1. <b><a href="http://forum.move38.com/t/basic-display-tutorial/290">Display</a></b> - Make a Blink blink</li>
+				<li>2. <b><a href="http://forum.move38.com/t/basic-time-functions/303">Time</a></b> - Learn to use timers</li>
+				<li>3. <b><a href="http://forum.move38.com/t/button-inputs-tutorial/288">Button Presses</a></b> - Respond to user input</li>
+				<li>4. <b><a href="http://forum.move38.com/t/basic-communication-tutorial/302">Communication</a></b> - Let your Blinks talk to each other</li>
+				<li>5. <b><a href="http://forum.move38.com/t/safely-sending-signals-part-1/260">Advanced communication</a></b> - Give Blinks the gift of cooperation</li>
+	        </ul>
+	         
+	        <h2>Blinks Tutorials</h2>
+	        <ul class="list-unstyled">
+				<li><a href="https://www.youtube.com/watch?v=PQyzGJMQOqY">Load your first game</a></li>
+				<li><a href="https://www.youtube.com/watch?v=PQyzGJMQOqY&feature=youtu.be&t=36">Switch to another game</a></li>
+				<li><a href="https://www.youtube.com/playlist?list=PL12oS6oNgRNQXR-ExdIM8BzHkzqJjPrE5">Learn to play the Games</a></li>
+				<li><a href="https://www.youtube.com/watch?v=PQyzGJMQOqY&feature=youtu.be&t=122">Troubleshooting</a></li>
+	        </ul>
+		</div>
+    	<br>--<br><br><br>
+        
+      </div>
+    </div>
+ </div>
+ 
+ <div class="row bg-dark text-light">
+	 <div class="col-lg-12 text-center">
+		<br>
+        <small>&copy; Copyright 2020, Move38, Inc.</small>
+        <br><br>
+	 </div>
+ </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.slim.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script>
+		// Thanks for open-source goodness :)
+		// https://stackoverflow.com/questions/31626852/how-to-add-konami-code-in-a-website-based-on-html
+		// a key map of allowed keys
+var allowedKeys = {
+  37: 'left',
+  38: 'up',
+  39: 'right',
+  40: 'down',
+  65: 'a',
+  66: 'b'
+};
+
+// the 'official' Konami Code sequence
+var konamiCode = ['up', 'up', 'down', 'down', 'left', 'right', 'left', 'right', 'b', 'a'];
+
+// a variable to remember the 'position' the user has reached so far.
+var konamiCodePosition = 0;
+
+// add keydown event listener
+document.addEventListener('keydown', function(e) {
+  // get the value of the key code from the key map
+  var key = allowedKeys[e.keyCode];
+  // get the value of the required key from the konami code
+  var requiredKey = konamiCode[konamiCodePosition];
+
+  // compare the key with the required key
+  if (key == requiredKey) {
+
+    // move to the next key in the konami code sequence
+    konamiCodePosition++;
+
+    // if the last key is reached, activate cheats
+    if (konamiCodePosition == konamiCode.length) {
+      activateCheats();
+      konamiCodePosition = 0;
+    }
+  } else {
+    konamiCodePosition = 0;
+  }
+});
+
+function activateCheats() {
+  document.body.style.backgroundImage = "url('images/cheatBackground.png')";
+
+  var audio = new Audio('audio/pling.mp3');
+  audio.play();
+
+  alert("cheats activated");
+}
+</script>
+
+</body>
+
+</html>
