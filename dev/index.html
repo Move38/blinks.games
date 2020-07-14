@@ -101,20 +101,27 @@
 	        <a href="https://www.arduino.cc/en/Main/Software"><img src="../img/dev/Arduino_Logo.svg" width="150px" alt="Arduino logo"/></a>
 	        <br>
 	        <br>
-	        <p>Make sure you download the Arduino IDE 1.8.12 or greater, not the online dev tools.</p>
+	        <p>Make sure you download the Arduino IDE 1.8.13 or greater, not the online dev tools.</p>
 		</div>
         
         <br>
         
 		<div class="dev-step">        
-	        <h1><b>3. Get the <a href="../Blinks-SDK-1.1.0-GM.zip">Blinks SDK</a></b></h1>
-	        <a href="../Blinks-SDK-1.1.0-GM.zip"><img src="../img/gameart/Blank.png" width="175px" alt="Blinks SDK"/></a>
-	        <p>After you have installed Arduino and launched the application, you will notice that Arduino has created a folder in your <span class="code">Documents</span> folder named <span class="code">Arduino</span>. Download the zip file above, then follow these steps to install the Blinks Library:</p>
+	        <h1><b>3. Install the Blinks SDK</b></h1>
+	        <img src="../img/gameart/Blank.png" width="175px" alt="Blinks SDK"/>
+	        <p>Follow these steps to install the Blinks SDK:</p>
 	        <ol>
-		        <li>Unzip the Blinks Library you downloaded into <span class="code">~/Documents/Arduino/hardware</span>. Note: If this is your first time with custom hardware, you will need to create the <span class="code">hardware</span> folder.</li>
-		        <li>Restart Arduino, then click `Tools` in your menu bar, and navigate down to <span class="code">Board:</span> you should now see <span class="code">Move38: Blinks Tile</span> at the bottom. Select it.</li>
-		        <li>Click on <span class="code">Tools</span> in your menu bar, and navigate down to <span class="code">Programmer:</span> select the programmer <span class="code">Blinks USBTinyISP</span></li>
+			<li>Launch Arduino</li>
+		        <li>Go into Settings and add... <span class="code">https://github.com/bigjosh/Move38-Arduino-Platform/releases/latest/download/package_move38.com-blinks_index.json</span>...under Additional Boards Manager URLs</li>
+			<li>Go to <span class="code">Tools->Board->Boards Manager</span></li>
+			<li>Search for "blinks"</li>
+			<li>Press Install.</li>
+			<li>Quit and relaunch Arduino</li>
+			<li>Click `Tools` in your menu bar, and navigate down to <span class="code">Board:</span> you should now see <span class="code">Move38: Blinks</span> at the bottom. Select it.</li>
+		        <li>Click on <span class="code">Tools</span> in your menu bar, and navigate down to <span class="code">Programmer:</span> select the programmer <span class="code">Blinks USBTinyISP</span>**</li>
 	        </ol>
+			<p>To make sure you set everything up correctly, go to File->Examples->Getting Started->Color Wheel, then press Upload</p>
+			<p>If we sent you new Developer Blink (cables connect directly to the Blink, select the this kind of programmer: <span class="code">Blinks USBasp</span></p>
 			<p><strong>NOTE FOR WINDOWS USERS</strong> - you will most likely need <a href="https://learn.adafruit.com/usbtinyisp/drivers">this driver</a> to use the USBtiny programmer</p>	
 		</div>
 
