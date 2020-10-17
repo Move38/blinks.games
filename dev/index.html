@@ -112,8 +112,8 @@
 	        <p>Follow these steps to install the Blinks SDK:</p>
 	        <ol style="text-align: left;">
 			<li>Launch Arduino</li>
-		        <li>Go into <pre>File->Preferences</pre> and add...<br>
-					<div border="1"><pre>https://boardsmanager.com/package_move38.com-blinks_index.json</pre></div><br>
+		        <li>Go into <span class="code">File->Preferences</span> and add...<br>
+					<div style="border-style: solid;">https://boardsmanager.com/package_move38.com-blinks_index.json</div><br>
 				...under Additional Boards Manager URLs<br>
 				(note that you can use a semicolon between URLs if there is already something here)<br>
 				<img src="img/board-url.png"><br>
@@ -124,15 +124,21 @@
 			</li>
 			
 			<li>Quit and relaunch Arduino</li>
-			<li>Goto <pre>Tools->Board:</pre> you should now see <span class="code">Move38: Blinks</span> at the bottom. Select it.<br>
+			<li>Goto <span class="code">Tools->Board:</span> you should now see <span class="code">Move38: Blinks</span> at the bottom. Select it.<br>
 			<img src="img/board-pick.png"><br></li>
-		        <li>Click `Tools` in your menu bar, and navigate down to <span class="code">Programmer:</span> select the programmer <span class="code">Blinks USBTinyISP</span>**</li>
-	        </ol>
-			<p>To make sure you set everything up correctly, go to File->Examples->Getting Started->Color Wheel, then press Upload</p>
+		        <li>Click <span class="code">Tools->Programmer</span> and select your programmer. They look like this...<br>
+		        <table style="border: 1px solid black;">
+		        	<tr><td style="vertical-align: middle;">TinyISP*</td><td style="vertical-align: middle;"><img src="img/programmer-pocketavr.png"></td></tr>
+		        	<tr><td style="vertical-align: middle;">USBASP</td><td style="vertical-align: middle;"><img src="img/programmer-usbasp.png"></td></tr>		        	
+		        </table>
+		        
+			<li>Load an example program by picking <span class="code">File->Examples->Getting Started->Color Wheel</span><link>
+			<li>Make sure the programmer is connected to a blink and press the Upload button<br>
+				<img src="img/upload-button.png"><br>
+			</li>
 			<br>
-			<p>**If we sent you new Developer Blink (cables connect directly to the Blink, select the this kind of programmer: <span class="code">Blinks USBasp</span></p>
 			<br>
-			<p><strong>NOTE FOR WINDOWS USERS</strong> - you will most likely need <a href="https://learn.adafruit.com/usbtinyisp/drivers">this driver</a> to use the USBtiny programmer</p>	
+			<p><strong>*NOTE FOR WINDOWS USERS</strong> - you will most likely need <a href="https://learn.adafruit.com/usbtinyisp/drivers">this driver</a> to use the USBtiny programmer</p>	
 		</div>
 
         <br>
