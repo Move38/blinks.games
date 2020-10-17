@@ -88,7 +88,8 @@
 
 		<div class="dev-step">
 	        <h1><b>1. Join the <a href="http://forum.move38.com">Forum</a></b></h1>
-	                <a href="http://forum.move38.com"><img src="../img/dev/Move38_Logotype_wide_color.svg" width="200px" alt="Slack logo"/></a>
+	                <a href="http://forum.move38.com">
+			<img src="img/Move38_Logotype_wide_color.svg" alt="Slack logo"/></a>
 	
 	        <p>Join our dedicated Discourse forum to have access to expert advice and community discussions with developers from Move38 and all over the world!</p>
 		</div>
@@ -98,7 +99,8 @@
 		<div class="dev-step">
 	        <h1><b>2. Install <a href="https://www.arduino.cc/en/Main/Software#download">Arduino</a></b></h1>
 	        <br>
-	        <a href="https://www.arduino.cc/en/Main/Software"><img src="../img/dev/Arduino_Logo.svg" width="150px" alt="Arduino logo"/></a>
+	        <a href="https://www.arduino.cc/en/Main/Software">
+			<img src="img/Arduino_Logo.svg" alt="Arduino logo"/></a>
 	        <br>
 	        <br>
 	        <p>Make sure you download the Arduino IDE 1.8.13 or greater, not the online dev tools.</p>
@@ -112,11 +114,11 @@
 	        <p>Follow these steps to install the Blinks SDK:</p>
 	        <ol style="text-align: left;">
 			<li>Launch Arduino</li>
-		        <li>Go into <span class="code">File->Preferences</span> and add...<br>
-					<div style="border-style: solid;">https://boardsmanager.com/package_move38.com-blinks_index.json</div><br>
+		        <li>Go into <span class="code">File->Preferences</span> and add...<br style="line-height: 10px;">
+					<div style="border-style: solid;padding: 5px; line-height: 10px;">https://boardsmanager.com/package_move38.com-blinks_index.json</div>
 				...under Additional Boards Manager URLs<br>
-				(note that you can use a semicolon between URLs if there is already something here)<br>
 				<img src="img/board-url.png"><br>
+				(note that you can use a semicolon between URLs if there is already something here)<br>				
 				</li>
 			<li>Go to <span class="code">Tools->Board->Boards Manager</span></li>
 			<li>Search for "blinks" and press install.<br>
@@ -128,27 +130,25 @@
 			<img src="img/board-pick.png"><br></li>
 		        <li>Click <span class="code">Tools->Programmer</span> and select your programmer. They look like this...<br>
 		        <table style="border: 1px solid black;">
-		        	<tr><td style="vertical-align: middle;">TinyISP*: </td><td style="vertical-align: middle;"><img src="img/programmer-pocketavr.png"></td></tr>
-		        	<tr><td style="vertical-align: middle;">USBASP: </td><td style="vertical-align: middle;"><img src="img/programmer-usbasp.png"></td></tr>		        	
+		        	<tr><td style="vertical-align: middle; padding-left:10px">
+						USBTiny*: </td><td style="vertical-align: middle;"><img src="img/programmer-pocketavr.png"></td></tr>
+		        	<tr><td style="vertical-align: middle; padding-left:10px">USBasp: </td><td style="vertical-align: middle;"><img src="img/programmer-usbasp.png"></td></tr>		        	
 		        </table>
 		        
-			<li>Load an example program by picking <span class="code">File->Examples->Getting Started->Color Wheel</span><link>
-			<li>Make sure the programmer is connected to a blink and press the Upload button<br>
-				<img src="img/upload-button.png"><br>
-			</li>
-			<li>The program should download into the blink and then you should see a pretty color wheel on the LEDs!</li>
-			<br>
-			<br>
-			<p><strong>*NOTE FOR WINDOWS USERS</strong> - you will most likely need <a href="https://learn.adafruit.com/usbtinyisp/drivers">this driver</a> to use the USBtiny programmer</p>	
+				<br><strong>*NOTE FOR WINDOWS USERS</strong> - you will most likely need <a href="https://learn.adafruit.com/usbtinyisp/drivers">this driver</a> to use the USBtiny programmer<li>Load an example program by picking 
+				<span class="code">File->Examples->Getting Started->Color Wheel</span><link>
+				<li>Make sure the programmer is connected to a blink and press the Upload button...<br>
+				<img src="img/upload-button.png"><br></li>
+				<li>You should see scrolling messages in the bottom Arduino window pane and the program should download into the blink.</li>
+				<li>When the download is done, you should see a pretty color wheel on the LEDs!</li>
+				<br>	
 		</div>
 
         <br>
 	        <div class="dev-step">
 			<h2>Getting Started Videos</h2>
-			<div style="width:50%">
+			<div style="  display: block; margin-left: auto;  margin-right: auto;">
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/ZwD9mZRH9nM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			</div>
-			<div style="width:50%; height:100%; background: #EFEFEF;">
 			</div>
 	      	</div>
 		
